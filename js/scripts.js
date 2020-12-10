@@ -55,6 +55,19 @@
           $("#mobiledownload").addClass("col-md-10_hidden");
       }
   }
+  if (navigator.userAgent.indexOf('iPhone') != -1) {
+    addEventListener("load", function() {
+      setTimeout(hideURLbar, 0);    }, false);
+      $("#pcdownload").addClass("col-md-10_hidden");
+    }
+  //아이폰이 아닌경우
+  else {
+    hideURLbar();
+  }
+  function hideURLbar() {
+    window.scrollTo(0, 1);
+  }
+
   // Magnific popup calls
   $('#portfolio').magnificPopup({
     delegate: 'a',
