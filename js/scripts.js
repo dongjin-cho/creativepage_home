@@ -90,7 +90,7 @@
   for(var i in smartPhones){
     if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
       //alert('this is Smart Phone...!');
-      document.location = 'http://34.95.52.206/mobile.html; //모바일접속일때 모바일사이트로 이동
+      document.location = 'http://34.95.52.206/mobile.html';
     }
   }
 
