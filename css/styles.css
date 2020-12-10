@@ -176,7 +176,14 @@ a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
-
+#pcdownload .pchidden{
+  visibility: hidden;
+  display: none;
+}
+#download .pchidden{
+  visibility: hidden;
+  display: none;
+}
 pre,
 code,
 kbd,
@@ -1106,6 +1113,11 @@ pre code {
     flex: 0 0 75%;
     max-width: 75%;
   }
+
+  .col-md-10_hidden {
+    display: none;
+  }
+
 
   .col-md-10 {
     flex: 0 0 83.3333333333%;
@@ -10155,3 +10167,4 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
