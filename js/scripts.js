@@ -45,7 +45,7 @@
   $(window).scroll(navbarCollapse);
 
   // win/mobile 구분
-  var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
+  /* var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
   if (navigator.platform) {
       if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
           //alert("모바일에서 접속하셨습니다");
@@ -54,7 +54,7 @@
           //alert("PC에서 접속하셨습니다");
           $("#mobiledownload").addClass("col-md-10_hidden");
       }
-  }
+  } */
   if (navigator.userAgent.indexOf('iPhone') != -1) {
     addEventListener("load", function() {
       setTimeout(hideURLbar, 0);    }, false);
@@ -90,7 +90,7 @@
   for(var i in smartPhones){
     if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
       //alert('this is Smart Phone...!');
-      document.location = 'http://m.naver.com'; //모바일접속일때 모바일사이트로 이동
+      document.location = 'http://34.95.52.206/mobile.html; //모바일접속일때 모바일사이트로 이동
     }
   }
 
