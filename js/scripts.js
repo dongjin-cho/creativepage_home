@@ -68,31 +68,31 @@
   }
 
   // [모바일로 접속시 모바일장치구분 하여 모바일 페이지로 이동]
-  var userAgent = navigator.userAgent;
-  // alert(userAgent);
+  // var userAgent = navigator.userAgent;
+  // // alert(userAgent);
 
-  // 스마트폰에서 이 코드를 실행하면 브라우저와 관련된 정보 표시
-  // 아이폰 : iPhone
-  // 윈도우폰 : IEMobile
-  // 안드로이드 : Android
-  // 등등으로 스마트폰 구분
+  // // 스마트폰에서 이 코드를 실행하면 브라우저와 관련된 정보 표시
+  // // 아이폰 : iPhone
+  // // 윈도우폰 : IEMobile
+  // // 안드로이드 : Android
+  // // 등등으로 스마트폰 구분
  
-  //변수선언
-  var smartPhones = [
-    'iphone', 'ipod',
-    'windows ce',
-    'android','blackberry',
-    'nokia','webos',
-    'opera mini','sonyerricsson',
-    'opera mobi','iemobile'
-  ];
+  // //변수선언
+  // var smartPhones = [
+  //   'iphone', 'ipod',
+  //   'windows ce',
+  //   'android','blackberry',
+  //   'nokia','webos',
+  //   'opera mini','sonyerricsson',
+  //   'opera mobi','iemobile'
+  // ];
 
-  for(var i in smartPhones){
-    if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
-      //alert('this is Smart Phone...!');
-      document.location = 'http://34.95.52.206/mobile.html';
-    }
-  }
+  // for(var i in smartPhones){
+  //   if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
+  //     //alert('this is Smart Phone...!');
+  //     document.location = 'http://34.95.52.206/mobile.html';
+  //   }
+  // }
 
   
   /*
