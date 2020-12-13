@@ -4001,18 +4001,6 @@ input[type=button].btn-block {
   height: 0.5px;
 }
 
-.header-title .header-logo{
-  height: 50px;
-  z-index: 100;
-  position: relative;
-  margin: 0 25%;
-}
-
-.header-title .navbar-brand img{
-  height: 50px;
-  max-width: 100%;
-}
-
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
