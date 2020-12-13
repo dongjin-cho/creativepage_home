@@ -3994,6 +3994,13 @@ input[type=button].btn-block {
 .navbar-logo{
   height: 25px;
 }
+.navbar-img-mob{
+  height: 10px;
+}
+.navbar-logo-mob{
+  height: 0.5px;
+}
+
 .header-title .header-logo{
   height: 50px;
   z-index: 100;
