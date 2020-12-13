@@ -3979,6 +3979,7 @@ input[type=button].btn-block {
   justify-content: space-between;
 }
 .navbar-brand {
+  
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -3987,6 +3988,24 @@ input[type=button].btn-block {
   line-height: inherit;
   white-space: nowrap;
 }
+.navbar-img{
+  height: 50px;
+}
+.navbar-logo{
+  height: 25px;
+}
+.header-title .header-logo{
+  height: 50px;
+  z-index: 100;
+  position: relative;
+  margin: 0 25%;
+}
+
+.header-title .navbar-brand img{
+  height: 50px;
+  max-width: 100%;
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
