@@ -14,6 +14,7 @@
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- mobile -->
     <script type="text/javascript">
+        window.open("popup.html","","width=600,height=600,left=600");
         //변수선언
         var smartPhones = [
             'iphone', 'ipod',
@@ -60,6 +61,13 @@
 </head>
 
 <body id="page-top">
+    
+    <script type="text/javaScript">
+        function moveLanding(){
+             //location.href = "http://livfarm.com/landing.html";
+             window.open("https://forms.gle/hbE2FGwcucKR1MDs9","","width=600,height=1200,left=600");
+        }
+    </script> 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container" >
@@ -98,26 +106,35 @@
         </div>
     </header>
     <!-- Call to action-->
+    <!-- <section class="page-section bg-dark text-white text-center" id="explore"> -->
+        <!-- <div class="container text-center"> -->
+            <!-- <h2 class="mb-4">지금 앱을 다운받아 갓 수확한 채소를 받아보세요!</h2> -->
+            <!-- <p class="text-white-50 mb-4">스마트폰 카메라를 실행하여 QR코드위에 비추어 주세요</p> -->
+            <!--  -->
+        <!-- </div> -->
+        <!-- <hr class="divider my-4" /> -->
+<!--  -->
+        <!-- <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="pcdownload"> -->
+            <!-- <div class="col-12 col-md-12 text-center"> -->
+                <!-- <img src="img/naver_qr.svg" alt="" /> -->
+            <!-- </div> -->
+<!--  -->
+<!--  -->
+    <!-- </section> -->
+
     <section class="page-section bg-dark text-white text-center" id="explore">
         <div class="container text-center">
-            <h2 class="mb-4">지금 앱을 다운받아 갓 수확한 채소를 받아보세요!</h2>
-            <p class="text-white-50 mb-4">스마트폰 카메라를 실행하여 QR코드위에 비추어 주세요</p>
-            <!-- <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a> -->
-        </div>
+            <h3 class="mb-4">지금 서베이에 참여하여<br>갓 수확한 채소를 받아보세요!</h3>
+            
         <hr class="divider my-4" />
-
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="pcdownload">
-            <!-- <form> -->
-            <!-- <div class="form-row"> -->
-            <!-- <div class="col-12 col-md-6 mb-2 mb-md-0"> -->
-            <!-- <h2 class="text-white mt-0">오른쪽 QR코드를 스캔해주세요</h2> -->
-            <!-- </div> -->
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="mobiledownload">
+            
             <div class="col-12 col-md-12 text-center">
-                <img src="img/naver_qr.svg" alt="" />
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- </form> -->
+                <button type="submit" id="button1" onclick="moveLanding();" class="btn btn-block btn-lg btn-primary">참여하기</button>
             </div>
+            <!-- </div> -->
+            <!-- </form> -->
+        </div>
 
 
     </section>

@@ -12,9 +12,24 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- mobile -->
     <script type="text/javascript">
-        window.open("popup.html","","width=600,height=600,left=600");
-        
+        //변수선언
+        var smartPhones = [
+            'iphone', 'ipod',
+            'windows ce',
+            'android', 'blackberry',
+            'nokia', 'webos',
+            'opera mini', 'sonyerricsson',
+            'opera mobi', 'iemobile'
+        ];
+
+        for (var i in smartPhones) {
+            if (navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))) {
+
+                document.location = 'http://livfarm.com/mobile.html';
+            }
+        }
     </script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
@@ -25,7 +40,6 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -46,21 +60,13 @@
 </head>
 
 <body id="page-top">
-    <script type="text/javaScript">
-        function moveLanding(){
-             //location.href = "http://livfarm.com/landing.html";
-             window.open("https://forms.gle/hbE2FGwcucKR1MDs9","","width=600,height=1200,left=600");
-        }
-    </script> 
-
-    
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" > 
-        <div class="container" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container" >
             <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Livfarm</a> -->
-            <img class="navbar-brand js-scroll-trigger" style="height: 40px; padding-right: -1px;" href="#" src="img/LivFarm symbol final.svg" />
+            <img class="navbar-brand js-scroll-trigger" style="height: 40px;" href="#page-top" src="img/LivFarm symbol final.svg" />
             <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Livfarm</a> -->
-            <img class="navbar-brand js-scroll-trigger" style="height: 30px; " href="#" src="img/Livfarm Logo Final.svg" />
+            <img class="navbar-brand js-scroll-trigger" style="height: 30px;" href="#page-top" src="img/Livfarm Logo Final.svg" />
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -75,13 +81,12 @@
             </div>
         </div>
     </nav>
-    
     <!-- Masthead-->
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center" id="about">
                 <div class="col-lg-10 align-self-end">
-                    <h2 class="text-uppercase text-white font-weight-bold">당신에게 가장 가까운 농장</h2>
+                    <h1 class="text-uppercase text-white font-weight-bold">당신에게 가장 가까운 농장</h1>
                     <!-- <h3 class="text-uppercase text-white font-weight-bold">이제 집에서 편하게 주문하세요</h3> -->
                     <hr class="divider my-4" />
                 </div>
@@ -95,56 +100,39 @@
     <!-- Call to action-->
     <section class="page-section bg-dark text-white text-center" id="explore">
         <div class="container text-center">
-            <h3 class="mb-4">지금 서베이에 참여하여<br>갓 수확한 채소를 받아보세요!</h3>
+            <h2 class="mb-4">지금 앱을 다운받아 갓 수확한 채소를 받아보세요!</h2>
+            <p class="text-white-50 mb-4">스마트폰 카메라를 실행하여 QR코드위에 비추어 주세요</p>
             <!-- <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a> -->
         </div>
         <hr class="divider my-4" />
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="mobiledownload">
+
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="pcdownload">
             <!-- <form> -->
             <!-- <div class="form-row"> -->
-            <!-- <div class="col-12 col-md-9 mb-2 mb-md-0" > -->
-            <!-- <input type="tel" class="form-control form-control-lg" placeholder="mobile 전화번호를 입력하세요('-'제외)"> -->
+            <!-- <div class="col-12 col-md-6 mb-2 mb-md-0"> -->
+            <!-- <h2 class="text-white mt-0">오른쪽 QR코드를 스캔해주세요</h2> -->
             <!-- </div> -->
             <div class="col-12 col-md-12 text-center">
-                <button type="submit" id="button1" onclick="moveLanding();" class="btn btn-block btn-lg btn-primary">참여하기</button>
+                <img src="img/naver_qr.svg" alt="" />
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </form> -->
             </div>
-            <!-- </div> -->
-            <!-- </form> -->
-        </div>
 
 
     </section>
-
-    <!-- Call to action-->
-    <!-- <section class="page-section bg-dark text-white text-center" id="explore"> -->
-        <!-- <div class="container text-center"> -->
-            <!-- <h3 class="mb-4">지금 앱을 다운받아<br>갓 수확한 채소를 받아보세요!</h3> -->
-           <!--  -->
-        <!-- </div> -->
-        <!-- <hr class="divider my-4" /> -->
-        <!-- <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="mobiledownload"> -->
-            <!-- <div class="col-12 col-md-12 text-center"> -->
-                <!-- <button type="submit" id="button1" onclick="moveLanding();" class="btn btn-block btn-lg btn-primary">앱 -->
-                    <!-- 다운로드</button> -->
-            <!-- </div> -->
-           <!--  -->
-        <!-- </div> -->
-
-
-    </section>
-    
     <!-- About-->
-    <section class="page-section bg-primary" id="story">
+    <section class="page-section bg-primary" id="story"  style="background-color: #fff; opacity: 1;">
         <div class="container" style="background-color: #45A820;">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-white mt-0">LivFarm의 시작</h2>
                     <hr class="divider light my-4" />
                     <p class="text-white-50 mb-4">LivFarm은 매일 식탁에 오르는 <span class="font-weight-bold text-white">채소를 더
-                            맛있고 영양 가득하게</span> 즐길 수 있는 방법을 고민했습니다.
-                        채소가 일반적인 유통과정에서 많게는 45%에 이르는 필수 영양소를 잃는 대신, 저희는 주문 즉시 수확하여 바로 배송합니다.</br>
+                            맛있고 영양 가득하게</span> 즐길 수 있는 방법을 고민했습니다.<br>
+                        채소가 일반적인 유통과정에서 많게는 45%에 이르는 필수 영양소를 잃는 대신, 저희는 주문 즉시 수확하여 바로 배송합니다.<br>
                         또한 저희는 <span class="font-weight-bold text-white">환경을 생각</span>했습니다. 지구에 부담이 되는 기존의 농업시스템 대신, 빛과
-                        물을 활용한 수직형 농장에서 유기농 채소를 재배합니다.
+                        물을 활용한 수직형 농장에서 유기농 채소를 재배합니다.<br>
                         당신이 있는 곳 가까이에서, 주문 즉시 필요한 양만 수확하여 제로 웨이스트를 지향합니다.</p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#explore">앱 다운로드</a>
                 </div>
@@ -156,13 +144,13 @@
     <!-- Services -->
     <section class="page-section" id="value">
         <div class="container">
-            <h4 class="text-center mt-0">Livfarm이 당신에게 드리는 가치</h4>
+            <h2 class="text-center mt-0">Livfarm이 당신에게 드리는 가치</h2>
             <hr class="divider my-4" />
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <!-- <i class="fas fa-4x fa-gem text-primary mb-4"></i> -->
-                        <i class="fas fa-4x fa-seedling mb-4" style="color: #91d833;"></i>
+                        <i class="fas fa-4x fa-seedling  mb-4" style="color: #91d833;"></i>
                         <h3 class="h5 mb-2">신선한 채소</h3>
                         <p class="text-muted mb-0">이웃 농장에서 갓 수확한 채소를<br>보내드립니다</p>
                     </div>
@@ -179,8 +167,9 @@
                     <div class="mt-5">
                         <!-- <i class="fas fa-4x fa-globe text-primary mb-4"></i> -->
                         <i class="fas fa-4x fa-cloud-upload-alt  mb-4" style="color: #c5299b;"></i>
+                        
                         <h3 class="h5 mb-2">혁신적인 재배와 유통</h3>
-                        <p class="text-muted mb-0">클라우드를 이용하고 데이터에 기반하여<br>채소를 재배하고 수요를 예측합니다</p>
+                        <p class="text-muted mb-0">클라우드를 이용하고 데이터에 기반하여 채소를 재배하고 수요를 예측합니다</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -332,59 +321,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h3 class="mt-0" href="#contact">궁금한 사항이 있으신가요?</h3>
+                    <h2 class="mt-0" href="#contact">궁금한 사항이 있으신가요?</h2>
                     <hr class="divider my-4" />
                     <!-- <p class="text-muted mb-5">언제나 연락을 기다리고 있습니다. 궁금하신 사항은 아래로 연락주세요.</p> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                    <h4 class="h5 mb-2">전화문의</h4>
+                    <p class="text-muted mb-0 mb-2">전화문의</p>
                     <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
                     <div>+82 010-6549-5612</div>
                     <p class="text-muted mb-0 mb-2">오전 9시 - 오후 6시</p>
                 </div>
                 <div class="col-lg-4 mr-auto text-center">
-                    <h4 class="h5 mb-2">이메일 문의</h4>
+                    <p class="text-muted mb-0 mb-2">이메일 문의</p>
                     <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
                     <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
                     <a class="d-block" href="mailto:86dongjin@gmail.com">admin@livfarm.com</a>
-                    <p class="text-muted mb-0">24시간 접수 가능</p>
+                    <p class="text-muted mb-0 mb-2">24시간 접수 가능</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Testimonials -->
-    <!-- <section class="testimonials text-center bg-light"> -->
-    <!-- <div class="container"> -->
-    <!-- <h2 class="mt-0">고객이 말하는 livfarm</h2> -->
-    <!-- <hr class="divider my-4" /> -->
-    <!-- <div class="row" style="justify-content: center; align-items: center;"> -->
-    <!-- <div class="col-lg-4"> -->
-    <!-- <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0"> -->
-    <!-- <img class="img-fluid rounded-circle mb-3" src="img/jun.png" alt=""> -->
-    <!-- <h5>이준엽</h5> -->
-    <!-- <p class="text-muted mb-5">"맛있어요"</p> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- <div class="col-lg-4"> -->
-    <!-- <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0"> -->
-    <!-- <img class="img-fluid rounded-circle mb-3" src="img/ye.png" alt=""> -->
-    <!-- <h5>신예린</h5> -->
-    <!-- <p class="text-muted mb-5">"맛있어요"</p> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- <div class="col-lg-4"> -->
-    <!-- <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0"> -->
-    <!-- <img class="img-fluid rounded-circle mb-3" src="img/kil.png" alt=""> -->
-    <!-- <h5>강길모</h5> -->
-    <!-- <p class="text-muted mb-5">"맛있어요"</p> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </section> -->
-    <!-- Footer-->
+    
     <footer class="bg-light py-5">
         <div class="container">
             <div class="small text-center text-muted">Copyright © 2020 - Livfarm</div>
